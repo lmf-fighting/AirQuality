@@ -1,0 +1,11 @@
+{
+  "pages":[
+    "pages/weather/weather",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#cbdef1"
+  }
+
+
+}

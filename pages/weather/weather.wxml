@@ -1,0 +1,14 @@
+<view>
+
+<text>{{'城市:'+weatherData.currentCity +'\n'+'日期:' + weatherData.date+'\n'+'温度:'+weatherData.temperature + '\n'+'天气:' + weatherData.weatherDesc+ '\n'+'风力:' +weatherData.wind+'\n'}}</text>
+</view>
+<view style='padding-top:30rpx'>
+</view>
+<block wx:for="{{futureWeather}}">
+<view style='border:1rpx solid #ccc; margin:5rpx'>
+<view>{{item.date}}</view>
+<view>{{item.temperature}}</view>
+<view>{{item.weather}}</view>
+<view>{{item.wind}}</view>
+</view>
+</block>
