@@ -1,0 +1,142 @@
+.page{
+background-attachment:fixed ; 
+background-position: center;
+
+
+overflow: hidden;
+
+}
+
+/*城市信息*/
+.city {padding: 1% 2%;
+ background: rgba(253, 254, 255, 0);
+ margin: 10px;
+  overflow: hidden;}
+  /*城市icon*/
+.city .dwicon{ width: 50rpx;
+ height: 50rpx; float: left; 
+  color:#ffff;}
+.city text{font-size: 36rpx;
+ color: #fff;
+  float: left;}
+  /*时间icon*/
+.city .zbicon{ width: 35rpx;
+ height: 35rpx; 
+ float: right;
+ margin:  5px;}
+.city .update{ font-size: 33rpx;
+ float: right; 
+ width: 200rpx;}
+
+/*aqi指数*/
+.aqi{
+height: 550rpx;
+margin-top:5%;
+flex-direction:column;
+margin-bottom:5%;
+
+border-radius:15rpx; 
+padding-bottom: 3px;
+}  
+ 
+/*aqi图*/
+ .pmpic{ 
+ display: flex;
+justify-content: center;
+align-items:center;  
+ }
+/*aqi图大小*/
+ .pmpic-size{
+width: 250rpx;
+ height: 250rpx;
+ }
+/*空气质量等级*/
+ .quality{ font-size: 65rpx;
+  text-align: center;
+  color:#fff;
+  font-family: 'Times New Roman'; }
+/*空气质量数据*/
+ .pmnum{font-size:55rpx;
+  text-align: center;
+   color:rgb(8, 128, 82);
+ }
+   /*空气质量pm2.5 aqi文本*/
+ .text{font-size:35rpx; 
+ text-align: center;
+ color:#fff;}
+
+
+/*表格*/
+.table{
+border:1px solid rgb(17, 16, 16);
+width:100%;
+border-radius: 15rpx;
+margin-top: 12%;
+color:white;
+background-color:rgb(17, 16, 16);
+opacity: 0.6; /*透明度*/
+}
+ .tr{
+   width:100%;
+   display:flex;
+   justify-content: space-between;
+ }
+.th{
+font-weight: 500;
+font-size:15px;
+color:white;
+
+}
+.td {
+padding: 8px;
+font-size:15px;
+width:40% ;
+color:white;
+text-align: center;
+
+}
+.th,.td{
+padding: 8px;
+border-bottom: 1px solid rgb(17, 16, 16);/*横*/
+border-right: 1px solid rgb(17, 16, 16);/*竖*/
+text-align: center;
+font-size: 35rpx;
+width: 100%;
+}
+
+.post{
+width:100%;
+}
+/*数值单位*/
+.unit{
+  font-size: 35rpx;
+  color:#eceaea;
+  float:right;
+}
+/*关于pm2.5的说明*/
+.con{
+width:100%;
+margin-top: 10%;
+background-color: rgb(17, 16, 16);
+opacity: 0.6; /*透明度*/
+border-radius: 15rpx;
+}
+.container-text{
+  font-size: 35rpx;
+  color:#ffff;
+  font-family: 'Times New Roman';
+  text-indent:2em; 
+}
+.shuju{
+    display: flex;
+    justify-content: center;
+  font-size: 35rpx;
+  color: #fff;
+ 
+}
+.about{
+  width:98%;
+  color:#ffff;
+ display: flex;
+ justify-content: center;
+}

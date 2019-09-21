@@ -1,0 +1,54 @@
+
+<!--aqi.wxml-->
+<view class="page" style="background-image:url('../../images/air_bg1.jpg')">
+  <view class="city" bindtap="bindViewTap">
+    <image class="dwicon" src='../../images/icon/dingwei1.png'></image>
+    <text>{{province}}{{city}}{{district}}</text>
+    
+    <text class="update">{{result.pubtime}}更新</text>
+    <image class="zbicon" src=''></image>
+  </view>
+
+
+  <view class="aqi"   bindtap="bindViewTap" >
+  <view class="pmpic">
+    <image class="pmpic-size" src="../../images/icon/kongqiqingxin.png" catchtap='changePic'></image>
+ </view>
+    <view class="quality"><text>{{result.quality}}</text></view>
+   
+      <view class="pmnum"> 
+       <text>{{result.PM2_5}}  {{result.AQI}}</text></view>
+      <view class="text">
+      <text>  PM2.5  |  AQI  </text></view>
+      <view class="text"><text>首要污染:{{result.pollutions}}</text></view>
+     </view>
+   
+
+<view class="post">
+<text class="unit">单位：μg/m3(CO为mg/m3)</text>
+</view>
+
+<view class="table">
+<view class="tr">
+<view class="th">PM10</view>
+<view class="th">CO</view>
+<view class="th">NO2</view>
+<view class="th">O3</view>
+<view class="th">SO2</view>
+</view>
+<view class="tr">
+<view class="td">{{result.PM10}}</view>
+<view class="td"> {{result.CO}}</view>
+<view class="td">{{result.NO2}}</view>
+<view class="td">{{result.O3}}</view>
+<view class="td"> {{result.SO2}}</view>
+</view>
+</view>
+
+<text class="shuju">监测站点：{{result.station}}</text>
+
+
+<view class="con">
+<view><text class="about">——关于PM2.5——</text></view>
+<text class="container-text">   细颗粒物又称细粒、细颗粒、PM2.5。细颗粒物指环境空气中空气动力学当量直径小于等于 2.5 微米的颗粒物。它能较长时间悬浮于空气中，其在空气中含量浓度越高，就代表空气污染越严重。虽然PM2.5只是地球大气成分中含量很少的组分，但它对空气质量和能见度等有重要的影响。与较粗的大气颗粒物相比，PM2.5粒径小，面积大，活性强，易附带有毒、有害物质（例如，重金属、微生物等），且在大气中的停留时间长、输送距离远，因而对人体健康和大气环境质量的影响更大。 </text></view>
+</view>

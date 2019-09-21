@@ -1,0 +1,154 @@
+.bg{
+ 
+  background-position: center;
+}
+
+
+/*正倒序图标样式*/
+
+.icon-order-up::before {
+  font-size: 28rpx;
+  content: "\e7fe";
+}
+
+.icon-order-up::before.active {
+  color: #ff8d68;
+}
+
+.icon-order-up::before.inactive {
+  color: #333;
+}
+
+.icon-order-down::after {
+  font-size: 28rpx;
+  position: absolute;
+  right: 0rpx;
+  content: "\e74d";
+}
+
+.icon-order-down::after.active {
+  color: #ff8d68;
+}
+
+.icon-order-down::after.inactive {
+  color: #333;
+}
+
+/*  :end*/
+
+/*列表组件 start*/
+.weui-cells__title {
+  margin-top: 0.77em;
+  margin-bottom: 0.3em;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  color: #999;
+  font-size: 25rpx;
+}
+
+.weui-cell__bd {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+}
+
+.weui-cell {
+  padding: 20rpx 30rpx;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.weui-cells {
+  position: relative;
+  margin-top: 1.17647059em;
+  background-color: #fff;
+  line-height: 1.41176471;
+  font-size: 32rpx;
+}
+
+.weui-cells_after-title {
+  margin-top: 0;
+}/*列表组件 en'd*/
+
+.duiqi {/*垂直对齐*/
+  display: inline-block;
+  align-items: left;
+  white-space: pre-wrap;
+  flex-direction: column;
+  text-align: left;
+}
+/*表格样式*/
+.table {
+  border: 0px solid rgba(133, 5, 5, 0.719);
+  font-family: Microsoft yahei;
+  font-size: 30rpx;
+  background-color: #fff;
+  opacity: 0.8;
+}
+
+.tr {/*定义表格组件，设置为垂直对齐*/
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 2rem;
+  align-items: center;
+}
+
+.td {/*表格行*/
+  width: 40%;
+  justify-content: center;
+  text-align: center;
+}
+
+.bg-w {  /*行数为偶数时的背景色*/
+  background: snow;
+}
+
+.bg-g { /*行数为基数时的背景色*/
+  background: #e6f3f9;
+}
+
+.th {/*表格的子标题*/
+  width: 40%;
+  justify-content: center;
+  background: rgba(107, 2, 2, 0.884);
+  color: #fff;
+  display: flex;
+  height: 2rem;
+  align-items: center;
+  opacity: 0.8;
+}
+.title{
+  text-align: center;
+  line-height: 85rpx;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  font-size: 60rpx;
+  color: rgb(46, 43, 43)
+}
+.danwei{
+  font-family: 'Times New Roman', Times, serif;
+  text-align: right;
+  font-size: 32rpx;
+  color: rgb(117, 110, 110);
+}
+/* 返回顶部 */
+.goTop{
+  height: 80rpx;
+  width: 80rpx;
+  position: fixed;
+  background: rgba(241, 239, 239, 0.3);
+  right: 30rpx;
+  border-radius: 50%;
+}
+.ct{
+  font-size: 32rpx;
+  color: rgb(73, 70, 70);
+  opacity: 0.8;
+}
+

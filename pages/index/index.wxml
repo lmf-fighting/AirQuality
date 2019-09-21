@@ -1,0 +1,46 @@
+<!--index.wxml-->
+
+  <!-- 外部搜索 -->
+<view class="photo-bg"  >
+ <view class='list-search'>
+ <button  class="infoText"  bindtap="translate">{{province}} {{city}} {{district}}  </button>
+ <button class='search-button' data-cid1='{{province}}' data-cid2='{{city}}' data-cid3='{{district}}'
+   catchtap='searchMt'>完成</button>
+  </view > 
+  <view class='local'>
+  <image src='../../images/icon/dingwei1.png' catchtap='local' class='local-img'></image></view>
+
+ 
+</view>  
+
+      
+  <view class="animation-element-wrapper" animation="{{animation}}" style="visibility:{{show ? 'visible':'hidden'}}" bindtap="hiddenFloatView" data-id="444">
+     <view class="animation-element">
+        <text class="left-bt" catchtap="hiddenFloatView" data-id="555">取消</text>
+        <text class="right-bt" catchtap="hiddenFloatView" data-id="666">确定</text>
+          <view class="line"></view> 
+
+
+        <picker-view indicator-style = "height: 50rpx;" value="{{value}}" bindchange="bindChange" catchtap="nono">
+        <!--省-->
+        <picker-view-column>
+           <view wx:for="{{provinces}}" wx:for-item="sheng" wx:key="">
+             {{sheng.name}}
+          </view>
+        </picker-view-column>
+        <!--地级市-->
+        <picker-view-column>
+          <view wx:for="{{citys}}" wx:key="">
+            {{item.name}}
+          </view>
+        </picker-view-column>
+        <!--区县-->
+        <picker-view-column>
+          <view wx:for="{{countys}}" wx:key="">
+            {{item.name}}
+          </view>
+        </picker-view-column>
+        </picker-view>
+    </view>
+  </view>
+

@@ -1,0 +1,124 @@
+/*pages/weather/weather.wxss*/
+.img1 {
+width: 60rpx;
+height: 60rpx;
+}
+.bg{
+  width: 800rpx;
+  height: 600rpx;
+}
+.w{
+  color: white;
+}
+.b{
+  font-weight: bold;
+}
+ 
+.l{
+  border: 1rpx solid #fff;
+}
+ 
+.center{
+  text-align: center;
+  margin: auto 0;
+}
+ 
+.hor{
+  display: flex;
+}
+ 
+.f50{
+  font-size: 50rpx;
+}
+ 
+/**index css**/
+ 
+ 
+/*.bg {
+  width: 100%;
+  height: 700rpx;
+}*/
+ 
+.temp{
+  font-size: 100rpx;
+}
+ 
+.container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  height: 700rpx;
+  display: block;
+  
+  
+}
+ 
+.nowWeather{
+  padding: 60rpx;
+}
+ 
+.weahterDetail{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 50rpx;
+}
+ 
+.forcast{
+  background-color: rgb(244, 246, 247);
+  padding: 20rpx;
+  margin-left: 16rpx;
+  margin-right: 16rpx;
+  border-bottom: 5rpx solid rgb(134, 180, 172);
+  justify-content: space-around;
+  margin:0 auto; 
+  font-size:  33rpx;
+  
+}
+.future .line{
+  
+  border-bottom: 1rpx solid #fff;
+ 
+}
+ .future{
+   background-color: rgb(182, 143, 143);
+   border: 1rpx,solid,rgb(250, 245, 245);
+   margin: 10rpx;
+   border-radius: 10rpx;
+   float:left;
+  
+
+ }
+
+.life{ flex: 1; text-align: center; background: #cef; color: #bbd; padding: 4px;
+margin: 5rpx;
+ border-radius: 10rpx;
+  float:left;
+  font-size: 36rpx;
+}
+.life image{ width:40px; height: 40px; display: block; margin: 0 auto;}
+
+ .castItem{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+ /* border-bottom: 1rpx solid #ccc; */
+  padding:50rpx 10rpx;
+  
+   
+}
+.suggestion{ margin-top: 5%;}
+.suggestion .title{ display: block; padding: 3% 5%; background: #58b; color: #fff;}
+.suggestion .list{ display: flex; font-size: 12px; margin-top: 1px; }
+.suggestion .list_l
+.suggestion .list_l 
+.suggestion .list_r{ flex: 4; background: #eee; padding: 8px; color: #aaa;}
+.suggestion .list_t{ font-size: 14px; display: block; margin-bottom: 5px; color: #333;}
+
+
+  

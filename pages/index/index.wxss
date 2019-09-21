@@ -1,0 +1,145 @@
+
+/**index.wxss**/
+page {
+  display: block;
+  min-height: 100%;
+  background-image:url("https://image.baidu.com/search/down?tn=download&ipn=dwnl&word=download&ie=utf8&fr=result&url=http%3A%2F%2Fimgsrc.baidu.com%2Fimage%2Fc0%253Dshijue1%252C0%252C0%252C294%252C40%2Fsign%3D4646c9e79325bc313f5009db36b6e7c4%2F5d6034a85edf8db1a0a0604d0323dd54564e7408.jpg&thumburl=https%3A%2F%2Fss1.bdstatic.com%2F70cFvXSh_Q1YnxGkpoWK1HF6hhy%2Fit%2Fu%3D1830656069%2C2980274%26fm%3D200%26gp%3D0.jpg");
+  background-attachment:fixed ;
+  background-size:600px 600px;
+}
+
+.infoText{  
+  margin-top:10rpx;
+  top: 10rpx;
+  width: 500rpx;
+  height: 80rpx; 
+  line-height: 80rpx; 
+  align-items:center;
+  font-size: 40rpx;
+}
+
+picker-view{
+  background-color: white;
+  padding: 0;
+  width: 100%; 
+  height: 380rpx;
+  bottom: 0;
+  position: fixed;
+}
+
+picker-view-column view{
+  vertical-align:middle; 
+  font-size: 28rpx;
+  line-height: 28rpx;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ----------------------------------------- */
+
+.animation-element-wrapper {
+  display: flex;  
+  position: fixed;
+  left: 0;
+  top:0;
+  height: 50%;
+  width: 100%;
+ 
+}
+.animation-element {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 460rpx;
+  bottom: 0;
+}
+
+.animation-button {
+  margin-top: 10rpx;
+  top:10rpx;
+  width: 500rpx;
+  height: 80rpx; 
+  line-height: 80rpx; 
+  align-items:center;
+}
+
+
+text{
+  color: #999999;
+  display: inline-flex;  
+  position: fixed;
+  margin-top: 20rpx;
+  height: 50rpx;
+  text-align: center;
+  line-height: 50rpx;
+  font-size: 34rpx;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.left-bt{
+  left: 30rpx;
+}
+.right-bt {
+  right: 30rpx;
+}
+
+.line{
+  display: block;
+  position: fixed;
+  height: 1rpx;
+  width: 100%;
+  margin-top: 89rpx; 
+  background-color: #eeeeee;
+}
+
+.list-search {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 90rpx;
+  padding: 10rpx 30rpx;
+  box-sizing: border-box;
+  z-index: 20;
+ 
+}
+.search-button {
+  width: 150rpx; 
+  flex-shrink: 0;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin-left: 10rpx;
+  margin-top: 10rpx;
+  font-size: 40rpx;
+  top:10rpx;
+}
+.local-button {
+  width: 150rpx; 
+  flex-shrink: 0;
+  height: 80rpx;
+  line-height: 80rpx;
+ font-size: 40rpx;
+ 
+ 
+}
+.local{
+ margin-top: 140rpx;
+  display: flex;
+  top:10rpx;
+  float: right;
+  margin-right: 60rpx;
+  
+}
+.local-img{
+  width: 100rpx;
+  height: 100rpx;
+}
+.photo-bg{
+height: 100%;
+width:100%;
+}
+

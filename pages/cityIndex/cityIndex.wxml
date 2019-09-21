@@ -1,0 +1,50 @@
+<block class=''>
+  <view style="background-image:url('../../images/air_bg2.jpg')" class='bg'>
+    <view >
+
+      <view class='title' >空气质量排行榜</view>
+      <view class='ct'>数据更新：{{list[0].ct}}</view>
+      <view class='danwei'>数值单位：μg/m3(CO为mg/m3) </view>
+      <view class='table'>
+        <view class='tr'>
+          <view class='th'>排名</view>
+          <view class='th'>城市</view>
+          <view class='th'>AQI</view>
+          <view class='th'> PM2.5</view>
+          <view class='th'>质量</view>
+          <view class='th'>首要污染物</view>
+          <view class='th'>CO</view>
+          <view class='th'>NO2</view>
+        </view>
+
+       <image src='../../images/icon/zhiding.png' class='goTop' hidden='{{!floorstatus}}' bindtap="goTop"></image>
+          <block wx:for="{{list}}" wx:key="{{num}}">
+      <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+              <view class='td'>{{item.num}}</view>
+              <view class='td'>{{item.area}}</view>
+              <view class='td'>{{item.aqi}}</view>
+              <view class='td'>{{item.pm2_5}}</view>
+              <view class='td'>{{item.quality}}</view>
+              <view class='td'>{{item.primary_pollutant}}</view>
+              <view class='td'>{{item.co}}</view>
+              <view class='td'>{{item.no2}}</view>
+            </view>
+              <view class="tr" wx:else>
+              <view class='td'>{{item.num}}</view>
+              <view class='td'>{{item.area}}</view>
+              <view class='td'>{{item.aqi}}</view>
+              <view class='td'>{{item.pm2_5}}</view>
+              <view class='td'>{{item.quality}}</view>
+              <view class='td'>{{item.primary_pollutant}}</view>
+              <view class='td'>{{item.co}}</view>
+              <view class='td'>{{item.no2}}</view>
+            </view>
+            </block>
+         
+
+        </view>
+
+      </view>
+    </view>
+ 
+</block>
