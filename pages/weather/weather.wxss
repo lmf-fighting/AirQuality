@@ -1,1 +1,200 @@
-/* pages/welcome/welcome.wxss */
+/*pages/weather/weather.wxss*/
+
+/*背景设置*/
+
+.page {
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.localicon {
+  width: 55rpx;
+  height: 55rpx;
+}
+
+/*天气图标*/
+
+.img1 {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+/*地址*/
+
+.w {
+  color: white;
+  font-weight: bold;
+}
+
+/*温度*/
+
+.temperature {
+  height: 200rpx;
+  font-weight: bold;
+  font-size: 100rpx;
+  color: white;
+font-family: 'microsoft yahei';  
+}
+
+/*日期*/
+
+.data {
+  height: 100rpx;
+  width: 100%;
+  color: white;
+}
+
+/*天气信息框*/
+
+.container {
+  width: 100%;
+  height: 500rpx;
+  padding-top: 50rpx;
+  display: flex;
+  color: white;
+}
+
+/*风向*/
+
+.weahterDetail {
+  width: 100%;
+ font-weight: bold;
+  text-align: center;
+  margin: auto 0;
+  font-size: 45rpx;
+  letter-spacing: 3rpx;
+}
+
+/*未来三天文本*/
+
+.futurew {
+ 
+  line-height: 70rpx;
+  margin-top: 10rpx;
+  text-align: left;
+  color: white;
+  margin-left: 5rpx;
+  height: 60rpx;
+  font-weight: bold;
+ 
+ 
+}
+
+/*未来天气*/
+
+.forcast {
+  padding: 20rpx;
+  margin-left: 5rpx;
+ 
+
+  border-radius: 10rpx;
+  margin: 10rpx;
+ 
+  color: rgba(255, 255, 255, 0.966);
+  background-color: rgb(17, 16, 16);
+  opacity: 0.6; /*透明度*/
+}
+/*表格样式*/
+.table {
+  font-family: Microsoft yahei;
+  font-size: 35rpx;
+}
+
+.tr {/*定义表格组件，设置为垂直对齐*/
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 2rem;
+  align-items: center;
+}
+
+.td {/*表格行*/
+  width: 50%;
+  justify-content: center;
+
+}
+
+
+/*建议文本*/
+
+.future {
+  margin: 10rpx;
+  font-family: 'Times New Roman';
+  font-size: 30rpx;
+  border-radius: 10rpx;
+  float: left;
+  color: rgb(29, 27, 27);
+}
+
+/*生活指数排布*/
+
+.life {
+  flex: 1; /*让所有弹性盒模型对象的子元素都有相同的长度，且忽略它们内部的内容：*/
+  text-align: center;
+  padding: 4rpx;
+  margin: 10rpx;
+  border-radius: 10rpx;
+  float: left;
+  font-size: 36rpx;
+  color: white;
+  background: rgb(17, 16, 16);
+  opacity: 0.7; /*透明度*/
+}
+
+.life image {
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin: 0 auto;
+}
+
+/*未来三天天气条框*/
+
+.castItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/*生活指数文本*/
+
+.k {
+  height: 60rpx;
+  font-weight: bold;
+  padding-top: 10rpx;
+  color: white;
+}
+
+/*
+ .text{
+   text-align: center;
+   font-family: 'Times New Roman';
+ } 
+ .suggestion{
+  text-indent:2em; 
+ }*/
+
+/*生活指数详情*/
+
+.future {
+  color: white;
+  background: rgb(17, 16, 16);
+  opacity: 0.6; /*透明度*/
+  border: 1rpx, solid, rgb(250, 245, 245);
+  margin: 10rpx;
+  border-radius: 10rpx;
+  float: left;
+  font-size: 36rpx;
+}
+
+.future .line {
+  border-bottom: 1rpx solid #fff;
+}
+
+/*生活指数分段背景*/
+
+.f {
+  height: 1400rpx;
+  width: 100%;
+}

@@ -1,11 +1,49 @@
 {
   "pages":[
+  
     "pages/weather/weather",
-    "pages/logs/logs"
+   "pages/cityIndex/cityIndex",
+    "pages/airQuality/airQuality",
+    "pages/index/index"
+
   ],
   "window": {
-    "navigationBarBackgroundColor": "#cbdef1"
-  }
+    "navigationBarBackgroundColor": "#BCD2EE",
+    "backgroundTextStyle": "dark",
+    "navigationBarTitleText": "空气质量",
+    "navigationBarTextStyle": "black"
 
+  },
+
+"tabBar": {
+  "borderStyle": "black",
+  "backgroundColor": "#FFFFFF",
+  "position": "bottom",
+  "selectedColor": "#DF5054",
+  "color": "gray",
+  
+  "list": [
+    {
+      
+      "pagePath": "pages/weather/weather",
+      "text": "天气",
+   "iconPath": "images/icon/weather.png",
+      "selectedIconPath": "images/icon/weather1.png"
+    },
+    {
+      "pagePath": "pages/airQuality/airQuality",
+      "text": "空气质量",
+      "selectedIconPath": "images/icon/air1.png",
+      "iconPath": "images/icon/air.png"
+      
+    },
+    {
+      "pagePath": "pages/cityIndex/cityIndex",
+      "text": "排行榜",
+    "selectedIconPath": "images/icon/top1.png",
+      "iconPath": "images/icon/top.png"
+    }
+  ]
+}
 
 }

@@ -1,14 +1,55 @@
-<view>
 
-<text>{{'城市:'+weatherData.currentCity +'\n'+'日期:' + weatherData.date+'\n'+'温度:'+weatherData.temperature + '\n'+'天气:' + weatherData.weatherDesc+ '\n'+'风力:' +weatherData.wind+'\n'}}</text>
+<view class="page" style="background-image:url('../../images/bg_weather.jpg')">
+<view class='container'>
+  <view class="w" bindtap='local'>
+  <image class="localicon" src="../../images/icon/dingwei1.png" ></image>
+  <text>{{currentProvince}}{{currentCity}}{{currentDistrict}}</text></view>
+
+  <view class="date">
+  {{today}}</view>
+<view class="temperature">{{now_temp}}</view>
+  
+
+  <view class="w">{{weatherData.temperature}} | {{weatherData.weather}}
+   <image src='{{weatherData.dayPictureUrl}}' class='img1' ></image></view>
+   
+  <view class="weahterDetail">{{weatherData.wind}}</view>
+ </view>
+
+ <view class="futurew">未来三天</view>
+   
+
+<view  class="table">
+
+<view wx:for="{{futureWeather}}" wx:for-index="idx" wx:if="{{idx>0}}">
+
+  <view  class="forcast">
+  <view class='castItem'>
+    <view class='tr'>
+      <view class='td'>{{item.date}}</view>
+       <view class='td'><image src='{{item.dayPictureUrl}}' class="img1"></image>{{item.weather}}</view>
+      <view class='td'> {{item.temperature}}</view>
+      <view class='td'>{{item.wind}}</view>
+    </view>
+    </view>
+  </view>
+ </view>
+ </view>
+
+
+<view class="k"><text>生活指数</text></view>
+<view class='f'>
+  <view class="life" wx:for-index="idx"  wx:for="{{lifeIndex}}">
+  <image src='{{lifePicture[idx]}}'></image> 
+      <view> {{item.title}}</view>
+      <view>{{item.zs}}</view>
+     </view>
+
+      <view style="clear:both" class="future" wx:for-index="idx" wx:for="{{lifeIndex}}">
+       <view class="">{{item.tipt}}</view>
+         <view class='line'></view>
+       <view class="">{{item.des}}</view>
+     </view>
+     </view>
+
 </view>
-<view style='padding-top:30rpx'>
-</view>
-<block wx:for="{{futureWeather}}">
-<view style='border:1rpx solid #ccc; margin:5rpx'>
-<view>{{item.date}}</view>
-<view>{{item.temperature}}</view>
-<view>{{item.weather}}</view>
-<view>{{item.wind}}</view>
-</view>
-</block>
